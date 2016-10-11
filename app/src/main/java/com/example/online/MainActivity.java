@@ -24,8 +24,8 @@ public class MainActivity extends Activity {
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        b1=(Button)findViewById(R.id.b1);
-        b2=(Button)findViewById(R.id.b2);
+        b1=(Button)findViewById(R.id.bas1);
+        b2=(Button)findViewById(R.id.bas2);
         textView=(TextView)findViewById(R.id.textView);
         ConnectivityManager connectivityManager=(ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo networkInfo=connectivityManager.getActiveNetworkInfo();
@@ -43,11 +43,15 @@ public class MainActivity extends Activity {
 
     }
 
-    public void addContact(View view)
+    public void addApp(View view)
     {
         startActivity(new Intent(this,Addinfo.class));
     }
 
+    public void addHistory(View view)
+    {
+        startActivity(new Intent(this,Addinfo_history.class));
+    }
 
 
     public void viewRegistration(View view)
@@ -66,12 +70,6 @@ public class MainActivity extends Activity {
             Toast.makeText(MainActivity.this,e.getMessage(),Toast.LENGTH_LONG).show();
         }
     }
-
-
-
-
-
-
 
     public void viewAppointment(View view)
 

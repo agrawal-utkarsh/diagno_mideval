@@ -38,11 +38,19 @@
 
     android:layout_width="200dp"
     android:layout_height="wrap_content"
-    android:text="add contact"
-    android:id="@+id/b1"
-    android:layout_marginTop="80dp"
-    android:onClick="addContact"
+    android:text="add appointment"
+    android:id="@+id/bas1"
+    android:onClick="addApp"
     />
+
+    <Button
+
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="add history"
+        android:id="@+id/bas2"
+        android:onClick="addHistory"
+        />
 
 
     <Button
@@ -50,7 +58,6 @@
         android:layout_height="wrap_content"
         android:text="patient:get_registration"
         android:id="@+id/b2"
-        android:layout_marginTop="70dp"
         android:onClick="viewRegistration"
         />
 
@@ -59,7 +66,6 @@
         android:layout_height="wrap_content"
         android:text="patient:get_appointment"
         android:id="@+id/b3"
-        android:layout_marginTop="70dp"
         android:onClick="viewAppointment"
         />
 
@@ -68,7 +74,6 @@
         android:layout_height="wrap_content"
         android:text="patient:get_full_history"
         android:id="@+id/b4"
-        android:layout_marginTop="70dp"
         android:onClick="viewFullHistory"
         />
 

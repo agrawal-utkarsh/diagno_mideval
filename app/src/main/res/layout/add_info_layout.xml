@@ -14,27 +14,20 @@
     <EditText
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:hint="enter name"
+        android:hint="enter adhar"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="50dp"
-        android:id="@+id/et_name"
+        android:id="@+id/et_adda"
     />
     <EditText
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:hint="enter email"
+        android:hint="enter date"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="50dp"
-        android:id="@+id/et_email"
-        android:inputType="textEmailAddress"/>
-    <EditText
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:hint="enter mobile"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="50dp"
-        android:id="@+id/et_mob"
-        android:inputType="phone"/>
+        android:id="@+id/et_datte"
+        android:inputType="date"/>
+
     <Button
         android:layout_width="170dp"
         android:layout_height="wrap_content"

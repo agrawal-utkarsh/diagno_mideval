@@ -18,24 +18,22 @@ import java.net.URL;
 import java.net.URLEncoder;
 
 public class Addinfo extends Activity {
-    EditText Name,Email,Mobile;
-    String  name,email,mobile;
+    EditText Adda,Datte;
+    String  adda,datte;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add_info_layout);
-        Name=(EditText)findViewById(R.id.et_name);
-        Email=(EditText)findViewById(R.id.et_email);
-        Mobile=(EditText)findViewById(R.id.et_mob);
+        Adda=(EditText)findViewById(R.id.et_adda);
+        Datte=(EditText)findViewById(R.id.et_datte);
     }
 
     public void saveInfo(View view)
     {
-        name=Name.getText().toString();
-        email=Email.getText().toString();
-        mobile=Mobile.getText().toString();
+        adda=Adda.getText().toString();
+        datte=Datte.getText().toString();
         BackgroundTask backgroundTask=new BackgroundTask();
-        backgroundTask.execute(name,email,mobile);
+        backgroundTask.execute(adda,datte);
         finish();
     }
 
@@ -57,17 +55,16 @@ public class Addinfo extends Activity {
         @Override
         protected void onPreExecute()
         {
-            add_info_url="http://lapla.net23.net/add_info.php";
+            add_info_url="http://lapla.net23.net/add_info_appointments.php";
 
         }
 
         @Override
         protected String doInBackground(String... args)
         {
-            String name,email,mobile;
-            name=args[0];
-            email=args[1];
-            mobile=args[2];
+            String adda,datte;
+            adda=args[0];
+            datte=args[1];
 
             //network operations
 
@@ -81,9 +78,8 @@ public class Addinfo extends Activity {
                 //httpURLConnection.setDoInput(true);
                 OutputStream OS = httpURLConnection.getOutputStream();
                 BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(OS, "UTF-8"));
-                String data_string = URLEncoder.encode("name", "UTF-8") + "=" + URLEncoder.encode(name, "UTF-8") + "&" +
-                        URLEncoder.encode("email", "UTF-8") + "=" + URLEncoder.encode(email, "UTF-8") + "&" +
-                        URLEncoder.encode("mobile", "UTF-8") + "=" + URLEncoder.encode(mobile, "UTF-8");
+                String data_string = URLEncoder.encode("aadhar_id", "UTF-8") + "=" + URLEncoder.encode(adda, "UTF-8") + "&" +
+                                     URLEncoder.encode("next_date", "UTF-8") + "=" + URLEncoder.encode(datte, "UTF-8");
                 bufferedWriter.write(data_string);
                 bufferedWriter.flush();
                 bufferedWriter.close();
