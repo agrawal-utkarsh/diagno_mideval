@@ -202,7 +202,7 @@ public class jason_appointment extends Activity
         }
         else
         {
-            Intent intent = new Intent(this, DisplayListView.class);
+            Intent intent = new Intent(this, DisplayListView2.class);
             intent.putExtra("json_data",json_string);
             startActivity(intent);
 

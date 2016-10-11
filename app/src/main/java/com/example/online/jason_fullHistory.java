@@ -145,7 +145,7 @@ public class jason_fullHistory extends Activity
         }
         else
         {
-            Intent intent = new Intent(this, DisplayListView.class);
+            Intent intent = new Intent(this, DisplayListView3.class);
             intent.putExtra("json_data",json_string);
             startActivity(intent);
 
