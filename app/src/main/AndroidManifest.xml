@@ -22,6 +22,10 @@
         <activity android:name=".jason" />
         <activity android:name=".jason_fullHistory"/>
         <activity android:name=".jason_appointment" />
+        <activity android:name=".DisplayListView2"/>
+        <activity android:name=".DisplayListView3"/>
+        <activity android:name=".Addinfo_history"/>
+
         <activity android:name=".DisplayListView"></activity>
     </application>
 
