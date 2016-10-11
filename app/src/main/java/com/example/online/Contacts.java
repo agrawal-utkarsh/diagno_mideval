@@ -12,6 +12,7 @@ public class Contacts
         this.setEmail(email);
         this.setMobile(mobile);
     }
+
     public String getMobile() {
         return mobile;
     }

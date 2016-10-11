@@ -19,14 +19,17 @@ public class DisplayListView extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.display_listview_layout);
-        listView=(ListView)findViewById(R.id.listview);
+        setContentView(R.layout.display_listview_layout); //pehle to iss activity ka layout attach kar dia ;simple hai
+        listView=(ListView)findViewById(R.id.listview);  //ab list view namak widget ko pakad liya iss variable mei
+                                                        //ab is widget par adapter lagate hai. vo adapter rakhta hai apne paas modified MKC
 
-        contactAdapter=new ContactAdapter(this,R.layout.row_layout);
-        listView.setAdapter(contactAdapter);
-        json_string=getIntent().getExtras().getString("json_data");
+        contactAdapter=new ContactAdapter(this,R.layout.row_layout);//yaha par adapter paida kiya hai ayr usko hashing function se attach kar dia hai
+        listView.setAdapter(contactAdapter);//yaha par list view k saath adapter ko attach kar dia
+        json_string=getIntent().getExtras().getString("json_data");//ye apna data xD ab aa raa hai MC.  ab bas data ko adapter mei paas karna hai jo hashing function mei
+                                                                   // paas kar dega aur jaadu bina kisi logic k BC !!
+                                                                    // nai nai logic toh hai ContactAdapter.java mei hai
 
-        //listview with custom adapter and custom listview
+        //listview with custom adapter and custom layout
             try
             {
                 jsonObject = new JSONObject(json_string);
@@ -36,12 +39,15 @@ public class DisplayListView extends AppCompatActivity {
 
                 while(count<jsonArray.length())
                 {
-                JSONObject JO=jsonArray.getJSONObject(count);
-                name=JO.getString("name");
+
+                    JSONObject JO=jsonArray.getJSONObject(count);
+                    name=JO.getString("name");
                     email=JO.getString("email");
                     mobile=JO.getString("mobile");
+
                     Contacts contacts=new Contacts(name,email,mobile);
-                    contactAdapter.add(contacts);
+
+                    contactAdapter.add(contacts);// ye ,ye kia paas adapter mei jo ab hashing function mei paas karega logic k thru
                     count++;
                 }
 

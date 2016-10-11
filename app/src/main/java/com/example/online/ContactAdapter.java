@@ -12,38 +12,41 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by utkarsh.agrawal on 08-10-2016.
- */
-
 public class ContactAdapter extends ArrayAdapter
 {
-    List list=new ArrayList();
+                                                  //yaha pe hoga logic BC !! hashing function ka jaadu
+
+    List list=new ArrayList();                   // toh at the heart of my custom contactAdapter lies a fucking ArrayList
+
     public ContactAdapter(Context context,int resource)
     {
         super(context,resource);
     }
 
 
-    public void add(Contacts object) {
+    public void add(Contacts object)
+    {
         super.add(object);
         list.add(object);
     }
 
     @Override
-    public int getCount() {
+    public int getCount()
+    {
         return list.size();
     }
 
     @Nullable
     @Override
-    public Object getItem(int position) {
+    public Object getItem(int position)
+    {
         return list.get(position );
     }
 
     @NonNull
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(int position, View convertView, ViewGroup parent)
+    {
 
         View row;
         row=convertView;
