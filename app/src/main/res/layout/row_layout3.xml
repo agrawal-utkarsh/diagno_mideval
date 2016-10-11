@@ -15,7 +15,7 @@
     <TextView
         android:layout_height="match_parent"
         android:layout_width="40dp"
-        android:id="@+id/tx_name"
+        android:id="@+id/tx_date"
       android:layout_toRightOf="@+id/tx_adhar"
         android:text="DIAGNO"
         android:gravity="center"
@@ -25,8 +25,8 @@
     <TextView
         android:layout_height="match_parent"
         android:layout_width="40dp"
-        android:id="@+id/tx_age"
-        android:layout_toRightOf="@+id/tx_name"
+        android:id="@+id/tx_hosname"
+        android:layout_toRightOf="@+id/tx_date"
         android:text="DIAGNO"
 
         android:gravity="center"
@@ -36,8 +36,8 @@
     <TextView
         android:layout_height="match_parent"
         android:layout_width="40dp"
-        android:id="@+id/tx_residence"
-        android:layout_toRightOf="@+id/tx_age"
+        android:id="@+id/tx_hosid"
+        android:layout_toRightOf="@+id/tx_hosname"
         android:text="DIAGNO"
 
         android:gravity="center"
@@ -47,8 +47,8 @@
     <TextView
         android:layout_height="match_parent"
         android:layout_width="40dp"
-        android:id="@+id/tx_gender"
-        android:layout_toRightOf="@+id/tx_residence"
+        android:id="@+id/tx_docname"
+        android:layout_toRightOf="@+id/tx_hosid"
         android:text="DIAGNO"
 
         android:gravity="center"
@@ -58,8 +58,31 @@
     <TextView
         android:layout_height="match_parent"
         android:layout_width="40dp"
-        android:id="@+id/tx_profile"
-        android:layout_toRightOf="@+id/tx_gender"
+        android:id="@+id/tx_dise"
+        android:layout_toRightOf="@+id/tx_docname"
+        android:text="DIAGNO"
+
+        android:gravity="center"
+
+        android:textAppearance="?android:textAppearanceLarge"
+        />
+
+    <TextView
+        android:layout_height="match_parent"
+        android:layout_width="40dp"
+        android:id="@+id/tx_spec"
+        android:layout_toRightOf="@+id/tx_dise"
+        android:text="DIAGNO"
+
+        android:gravity="center"
+
+        android:textAppearance="?android:textAppearanceLarge"
+        />
+    <TextView
+        android:layout_height="match_parent"
+        android:layout_width="40dp"
+        android:id="@+id/tx_medi"
+        android:layout_toRightOf="@+id/tx_spec"
         android:text="DIAGNO"
 
         android:gravity="center"
