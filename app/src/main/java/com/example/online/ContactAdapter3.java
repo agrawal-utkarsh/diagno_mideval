@@ -24,7 +24,7 @@ public class ContactAdapter3 extends ArrayAdapter
     }
 
 
-    public void add(Contacts object)
+    public void add(Contacts3 object)
     {
         super.add(object);
         list.add(object);
