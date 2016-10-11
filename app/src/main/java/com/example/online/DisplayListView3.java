@@ -20,7 +20,7 @@ public class DisplayListView3 extends AppCompatActivity {
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.display_listview_layout3); //pehle to iss activity ka layout attach kar dia ;simple hai
-        listView=(ListView)findViewById(R.id.listview);  //ab list view namak widget ko pakad liya iss variable mei
+        listView=(ListView)findViewById(R.id.listview36);  //ab list view namak widget ko pakad liya iss variable mei
                                                         //ab is widget par adapter lagate hai. vo adapter rakhta hai apne paas modified MKC
 
         contactAdapter=new ContactAdapter3(this,R.layout.row_layout3);//yaha par adapter paida kiya hai ayr usko hashing function se attach kar dia hai

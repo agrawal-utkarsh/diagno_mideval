@@ -109,7 +109,7 @@ public class Addinfo_history extends Activity {
                                      URLEncoder.encode("hospital_id", "UTF-8") + "=" + URLEncoder.encode(hidd, "UTF-8") +"&"+
                                      URLEncoder.encode("doctor_name", "UTF-8") + "=" + URLEncoder.encode(dnamed, "UTF-8") +"&"+
                                      URLEncoder.encode("diseases", "UTF-8") + "=" + URLEncoder.encode(dised, "UTF-8") +"&" +
-                                     URLEncoder.encode("specail_remarks", "UTF-8") + "=" + URLEncoder.encode(sred, "UTF-8")+"&" +
+                                     URLEncoder.encode("special_remarks", "UTF-8") + "=" + URLEncoder.encode(sred, "UTF-8")+"&" +
                                      URLEncoder.encode("medication", "UTF-8") + "=" + URLEncoder.encode(medid, "UTF-8") ;
                 bufferedWriter.write(data_string);
                 bufferedWriter.flush();
