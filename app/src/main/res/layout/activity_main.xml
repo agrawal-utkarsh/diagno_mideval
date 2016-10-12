@@ -33,6 +33,14 @@
     </LinearLayout>
 
 
+    <Button
+
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="press to login"
+        android:id="@+id/login"
+        android:onClick="onLogin"
+        />
 
     <Button
 
