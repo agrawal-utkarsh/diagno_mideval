@@ -1,71 +1,160 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="75dp">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#98dead"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#075e89"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:text="Aadhar Id:         "
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            />
+
 
     <TextView
-        android:layout_height="match_parent"
-        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
         android:id="@+id/tx_adhar"
-        android:layout_alignParentLeft="true"
         android:text="DIAGNO"
         android:gravity="center"
         android:textAppearance="?android:textAppearanceLarge"
  />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#075e89"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:text="Name:             "
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            />
 
     <TextView
-        android:layout_height="match_parent"
-        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
         android:id="@+id/tx_name"
-      android:layout_toRightOf="@+id/tx_adhar"
         android:text="DIAGNO"
         android:gravity="center"
         android:textAppearance="?android:textAppearanceLarge"
     />
-
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#075e89"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:text="Age:              "
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            />
     <TextView
-        android:layout_height="match_parent"
-        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
         android:id="@+id/tx_age"
-        android:layout_toRightOf="@+id/tx_name"
         android:text="DIAGNO"
 
         android:gravity="center"
 
         android:textAppearance="?android:textAppearanceLarge"
         />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#075e89"
+                android:fontFamily="casual"
+                android:textStyle="bold"
+                android:text="Residence:        "
+                android:gravity="center"
+                android:textAppearance="?android:textAppearanceLarge"
+                />
+
     <TextView
-        android:layout_height="match_parent"
-        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
         android:id="@+id/tx_residence"
-        android:layout_toRightOf="@+id/tx_age"
         android:text="DIAGNO"
 
         android:gravity="center"
 
         android:textAppearance="?android:textAppearanceLarge"
         />
+            </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#075e89"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:text="Gender:        "
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            />
     <TextView
-        android:layout_height="match_parent"
-        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
         android:id="@+id/tx_gender"
-        android:layout_toRightOf="@+id/tx_residence"
         android:text="DIAGNO"
 
         android:gravity="center"
 
         android:textAppearance="?android:textAppearanceLarge"
         />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#075e89"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:text="Profile picture:   "
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            />
     <TextView
-        android:layout_height="match_parent"
-        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
         android:id="@+id/tx_profile"
-        android:layout_toRightOf="@+id/tx_gender"
         android:text="DIAGNO"
 
         android:gravity="center"
 
         android:textAppearance="?android:textAppearanceLarge"
         />
+        </LinearLayout>
 
 
-</RelativeLayout>
+</LinearLayout>

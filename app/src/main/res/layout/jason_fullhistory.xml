@@ -11,34 +11,28 @@
     android:orientation="vertical"
     tools:context="com.example.online.jason_appointment">
 
-    <Button
-        android:layout_height="wrap_content"
-        android:layout_width="250dp"
-        android:text="get json"
-        android:layout_gravity="center_horizontal"
-        android:onClick="getJSON"
-        android:id="@+id/jfh1"
-        />
-
-
-    <Button
-        android:layout_height="wrap_content"
-        android:layout_width="250dp"
-        android:text="parse json"
-        android:layout_gravity="center_horizontal"
-        android:onClick="parseJSON"
-        android:id="@+id/jfh2"
-        android:layout_marginTop="20dp"
-        />
-
-    <TextView
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="json appear here"
-        android:textAppearance="?android:textAppearanceLarge"
-        android:gravity="center"
-        android:layout_marginTop="20dp"
-        android:id="@+id/tammy12"
-        />
+        android:layout_height="match_parent"
+        >
+
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:src="@drawable/kwid"
+            android:scaleType = "centerCrop"
+
+            />
+
+
+
+
+
+
+    </FrameLayout>
 
 </LinearLayout>

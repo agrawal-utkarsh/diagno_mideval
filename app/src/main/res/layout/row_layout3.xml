@@ -1,94 +1,217 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="75dp">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#98dead"
+    android:orientation="vertical">
 
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
     <TextView
-        android:layout_height="match_parent"
-        android:layout_width="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#075e89"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:text="Aadhar Id:                   "
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLarge"
+        />
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
         android:id="@+id/tx_adhar"
-        android:layout_alignParentLeft="true"
+        android:textStyle="bold"
         android:text="DIAGNO"
         android:gravity="center"
         android:textAppearance="?android:textAppearanceLarge"
  />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:textColor="#075e89"
+            android:fontFamily="casual"
+            android:text="Date:                            "
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            />
 
-    <TextView
-        android:layout_height="match_parent"
-        android:layout_width="40dp"
+        <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+            android:textStyle="bold"
         android:id="@+id/tx_date"
-      android:layout_toRightOf="@+id/tx_adhar"
         android:text="DIAGNO"
         android:gravity="center"
         android:textAppearance="?android:textAppearanceLarge"
     />
+</LinearLayout>
 
-    <TextView
-        android:layout_height="match_parent"
-        android:layout_width="40dp"
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Hospital Name:          "
+            android:textColor="#075e89"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            />
+
+        <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+            android:textStyle="bold"
         android:id="@+id/tx_hosname"
-        android:layout_toRightOf="@+id/tx_date"
         android:text="DIAGNO"
-
         android:gravity="center"
-
         android:textAppearance="?android:textAppearanceLarge"
         />
-    <TextView
-        android:layout_height="match_parent"
-        android:layout_width="40dp"
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Hospital Id:                 "
+            android:textColor="#075e89"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            />
+
+        <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+            android:textStyle="bold"
         android:id="@+id/tx_hosid"
-        android:layout_toRightOf="@+id/tx_hosname"
         android:text="DIAGNO"
-
         android:gravity="center"
-
         android:textAppearance="?android:textAppearanceLarge"
         />
-    <TextView
-        android:layout_height="match_parent"
-        android:layout_width="40dp"
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Doctor's Name:          "
+            android:textColor="#075e89"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            />
+
+        <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+            android:textStyle="bold"
         android:id="@+id/tx_docname"
-        android:layout_toRightOf="@+id/tx_hosid"
         android:text="DIAGNO"
-
         android:gravity="center"
-
         android:textAppearance="?android:textAppearanceLarge"
         />
-    <TextView
-        android:layout_height="match_parent"
-        android:layout_width="40dp"
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Diseases:                    "
+            android:textColor="#075e89"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            />
+
+
+        <TextView
+
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+            android:textStyle="bold"
         android:id="@+id/tx_dise"
-        android:layout_toRightOf="@+id/tx_docname"
         android:text="DIAGNO"
-
         android:gravity="center"
-
         android:textAppearance="?android:textAppearanceLarge"
         />
+</LinearLayout>
 
-    <TextView
-        android:layout_height="match_parent"
-        android:layout_width="40dp"
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="Special Remarks:  "
+            android:textColor="#075e89"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            />
+
+        <TextView
+        android:layout_height="wrap_content"
+            android:textStyle="bold"
+        android:layout_width="wrap_content"
         android:id="@+id/tx_spec"
-        android:layout_toRightOf="@+id/tx_dise"
         android:text="DIAGNO"
-
         android:gravity="center"
-
         android:textAppearance="?android:textAppearanceLarge"
         />
-    <TextView
-        android:layout_height="match_parent"
-        android:layout_width="40dp"
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Medication:    "
+            android:textColor="#075e89"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            />
+
+        <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+            android:textStyle="bold"
         android:id="@+id/tx_medi"
-        android:layout_toRightOf="@+id/tx_spec"
         android:text="DIAGNO"
-
         android:gravity="center"
-
         android:textAppearance="?android:textAppearanceLarge"
         />
+</LinearLayout>
 
-
-</RelativeLayout>
+</LinearLayout>

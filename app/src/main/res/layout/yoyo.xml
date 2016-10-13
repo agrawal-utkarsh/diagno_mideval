@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+    >
+
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="false"
+    android:layout_alignParentStart="false">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Special Remarks:"
+        android:textColor="#075e89"
+        android:id="@+id/tx_speciop"
+        android:autoText="true"
+        android:layout_span="3" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:background="@drawable/shape"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Doctor&apos;s Name:"
+            android:background="@drawable/shape"
+            android:id="@+id/tx_docname"
+            android:textColor="#075e89"
+            android:autoText="true" />
+    </TableRow>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="8"
+        android:background="@drawable/shape"
+        android:id="@+id/tx_date"
+        android:textColor="#075e89"
+        android:text="Date:"
+        android:autoText="true" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:background="@drawable/shape"
+        android:layout_height="match_parent">
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:background="@drawable/shape"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medication:"
+            android:textColor="#075e89"
+            android:id="@+id/tx_medi"
+            android:background="@drawable/shape"
+            android:autoText="true"
+            android:layout_column="00"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Diseases:"
+            android:background="@drawable/shape"
+            android:id="@+id/tx_dise"
+            android:textColor="#075e89"
+            android:autoText="true"
+            android:layout_span="3" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Special Remarks: "
+            android:textColor="#075e89"
+            android:background="@drawable/shape"
+            android:id="@+id/tx_spec"
+            android:layout_span="3"
+            android:autoText="true" />
+    </TableRow>
+
+</TableLayout>
+
+<TableRow
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_alignParentEnd="false"
+    android:layout_alignParentStart="false">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Hospital Name:"
+        android:background="@drawable/shape"
+        android:textColor="#075e89"
+        android:id="@+id/tx_hosname"
+        android:autoText="true"
+        android:layout_gravity="top" />
+</TableRow>
+
+</RelativeLayout>

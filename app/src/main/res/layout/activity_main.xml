@@ -12,85 +12,64 @@
     tools:context="com.example.online.MainActivity">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="enter adhar_id:"
-            android:id="@+id/jk"/>
 
         <EditText
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/uiop"
+            android:textColor="#01579B"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:hint="Aadhar_id" />
 
-            android:paddingLeft="45dp"
-            android:hint="enter adhar_id "/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:backgroundTint="#03A9F4"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:ems="10"
+            android:id="@+id/etPassword"
+            android:hint="Password" />
+
 
     </LinearLayout>
 
 
     <Button
-
-        android:layout_width="200dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="press to login"
-        android:id="@+id/login"
+        android:text="Login"
+        android:textColor="#01579B"
+        android:backgroundTint="#03A9F4"
+        android:fontFamily="casual"
+        android:textStyle="bold"
         android:onClick="onLogin"
+        android:id="@+id/logo"
         />
-
-    <Button
-
-    android:layout_width="200dp"
-    android:layout_height="wrap_content"
-    android:text="add appointment"
-    android:id="@+id/bas1"
-    android:onClick="addApp"
-    />
-
-    <Button
-
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:text="add history"
-        android:id="@+id/bas2"
-        android:onClick="addHistory"
-        />
-
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="patient:get_registration"
-        android:id="@+id/b2"
-        android:onClick="viewRegistration"
-        />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="patient:get_appointment"
-        android:id="@+id/b3"
-        android:onClick="viewAppointment"
-        />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="patient:get_full_history"
-        android:id="@+id/b4"
-        android:onClick="viewFullHistory"
-        />
-
 
     <TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="no network found"
-    android:id="@+id/textView"
-    android:layout_gravity="center_horizontal"
-    android:layout_marginTop="30dp"/>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="140dp"
+        android:paddingTop="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="REGISTER"
+        android:textColor="#01579B"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:id="@+id/tvRegisterHere"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="no network found"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"/>
 </LinearLayout>

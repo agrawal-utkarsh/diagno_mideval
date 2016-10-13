@@ -14,7 +14,7 @@ import java.util.List;
 
 public class ContactAdapter3 extends ArrayAdapter
 {
-                                                  //yaha pe hoga logic BC !! hashing function ka jaadu
+                                                  //yaha pe hoga logic patient !! hashing function ka jaadu
 
     List list=new ArrayList();                   // toh at the heart of my custom contactAdapter lies a fucking ArrayList
 

@@ -35,12 +35,7 @@ public class jason_appointment extends Activity
             setContentView(R.layout.jason_appointment_layout);
 
 
-        }
-
-    public void getJSON(View view)
-
-    {
-        json_la = getIntent().getExtras().getString("json_born");
+       json_la = getIntent().getExtras().getString("json_born");
         new BTask().execute(json_la);
     }
 
@@ -114,11 +109,11 @@ public class jason_appointment extends Activity
        @Override
         protected void onProgressUpdate(Void... values) {
             try {
-                Toast.makeText(jason_appointment.this, "start onprogress", Toast.LENGTH_LONG).show();
+            //    Toast.makeText(jason_appointment.this, "start onprogress", Toast.LENGTH_LONG).show();
 
                 super.onProgressUpdate(values);
             } catch (Exception e) {
-                Toast.makeText(jason_appointment.this, e.getMessage(), Toast.LENGTH_LONG).show();
+              //  Toast.makeText(jason_appointment.this, e.getMessage(), Toast.LENGTH_LONG).show();
 
             }
         }
@@ -126,14 +121,14 @@ public class jason_appointment extends Activity
         @Override
         protected void onPostExecute(String result) {
             try {
-                Toast.makeText(jason_appointment.this, "start on_post_execute", Toast.LENGTH_LONG).show();
+                //Toast.makeText(jason_appointment.this, "start on_post_execute", Toast.LENGTH_LONG).show();
 
-                TextView textView = (TextView) findViewById(R.id.tammy1);
-                textView.setText(result);
+
                 json_string=result;
+                parseJSON();
             }
              catch (Exception e) {
-                Toast.makeText(jason_appointment.this, e.getMessage(), Toast.LENGTH_LONG).show();
+               // Toast.makeText(jason_appointment.this, e.getMessage(), Toast.LENGTH_LONG).show();
 
             }
 
@@ -142,63 +137,10 @@ public class jason_appointment extends Activity
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    public void parseJSON(View view) {
+    public void parseJSON() {
         if (json_string == null)
         {
-            Toast.makeText(getApplicationContext(), "first get json", Toast.LENGTH_LONG).show();
+           // Toast.makeText(getApplicationContext(), "first get json", Toast.LENGTH_LONG).show();
         }
         else
         {
